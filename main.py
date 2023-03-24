@@ -9,7 +9,7 @@ width = int(input_video.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(input_video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 # Define output video file properties
-output_fps = fps * 0.25  
+output_fps = fps * 0.75  
 fourcc = cv2.VideoWriter_fourcc(*"mp4v")
 output_video = cv2.VideoWriter("output_video.mp4", fourcc, output_fps, (width, height))
 
